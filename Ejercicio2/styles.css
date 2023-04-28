@@ -1,0 +1,63 @@
+#app {
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+  }
+
+html{
+    background-image:        url("https://i.pinimg.com/564x/28/85/9a/28859aa56dbc26b0993e26ddd0e31013.jpg");
+  background-repeat: repeat space;
+  background-repeat: repeat repeat;
+  background-repeat: round space;
+  background-repeat: no-repeat round;
+}
+
+button{
+  background-image: -webkit-linear-gradient(top,  #FF2ED4, #1E197D);
+  
+  border-radius: 10px;
+  
+  font-family: Castoro Titling;
+  color: #ffffff ;
+  font-size: 26px;
+  padding: 19px;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    height: 90vh;
+}
+
+button:hover {
+  background: #FF2ED4;
+}
+  
+  .modal-mask {
+    position: fixed;
+    z-index: 2000;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .5);
+    display: table;
+    transition: opacity .3s ease;
+  }
+  
+  .modal-wrapper {
+    display: table-cell;
+    vertical-align: middle;
+  }
+  
+  .modal-container {
+    width: 300px;
+    margin: 0px auto;
+    padding: 20px 30px;
+    text-align: left;
+    background-color: #1E197D;
+  }
+  
+  footer {
+    text-align: right;
+  }

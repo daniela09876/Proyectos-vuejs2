@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing:content-box
+ }
+ 
+ body {
+   background-image: url(platzi.jpg);
+   background-position:100%;
+   background-size: cover;
+   color: rgb(228, 237, 230);
+   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   font-size: 15px;
+   height: 50%;
+   letter-spacing: 0.9px;
+   text-align: center;
+ }
+ 
+ :root {
+    --platzi:#19cd3d;
+ }
+ 
+ ::placeholder {
+   color:aliceblue;
+ }
+ 
+ ul li {
+   color: var(--platzi);
+ }
+ 
+ button, input, select, textarea {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+ }
+ 
+ h1 {
+   font-size: 1.7em;
+   font-weight: 700;
+   letter-spacing: 1.5px;
+ }
+ 
+ h2 {
+   font-size: 1.3em;
+   font-weight: 500;
+   margin: 40px 0 13px 0;
+ }
+ 
+ p {
+   margin: 20px 0;
+ }
+ 
+ input {
+   color: white;
+   display: block;
+   padding: 10px;
+   margin: 2px 0;
+   text-align: center;
+   width: 60%;
+   border-radius: 6px;
+   background: #00ff3341;
+   box-shadow: inset 5px 5px 10px #04b2e75f, 
+             inset -5px -5px 10px #04b2e75f;
+ }
+ 
+ button {
+   cursor: pointer;
+   border: 0;
+   border-radius: 6px;
+   border: 1px solid rgba(0,0,0,0);
+   background: linear-gradient(145deg, var(--platzi), var(--platzi));
+   box-shadow:  5px 5px 12px #ddd2ce84, 
+   -5px -5px 12px #ddd2ce84;
+   margin-top: 20px;
+   padding: 10px;
+   transition: var(--trans);
+ }
+ button:hover {
+   color: var(--platzi);
+   border-radius: 6px;
+   box-shadow:  5px 5px 12px #ffffff, 
+              -5px -5px 12px #ffffff;
+ }
+ 
+ #app {
+  width: 100%;
+  display: flex;
+  font-family: sans-serif;
+  justify-content: flex-end;
+  align-items: center;
+  height: 100vh;
+  width: 220vh;
+ }
+ 
+ .contenedor {
+   display: grid;
+   justify-items: center;
+   width: 90%;
+   max-width: 450px;
+   border-radius: 10px;
+   border-bottom: 5px solid var(--texto);
+   padding: 50px;
+   background: #040646;
+   box-shadow:  16px 16px 47px #00ff335d, 
+              -16px -16px 47px #00ff335d;
+ }
+ 
+ .logo {
+   width: 200px;
+   height: auto;
+ }
+ 
+ .aviso {
+   color:#ff6200;
+   font-size: 0.90em;
+   font-weight: 100;
+ }
+ 
+ .totalDeHoras {
+   border-radius: 10%;
+   padding: 5px;
+   background: var(--platzi);
+ }

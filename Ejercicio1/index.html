@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Mis Cursos De Platzi💚</title>
+    <link rel="stylesheet" href="styles.css"></head>
+<body>
+    <div id="app">
+        <div class="contenedor">
+            <img class="logo" src="https://www.deel.com/hs-fs/hubfs/Platzi%20logo.png?width=2000&height=773&name=Platzi%20logo.png">
+            <h1>Mis Cursos De Platzi💚</h1>
+            <br>
+            <!-- Propiedades -->
+            <input v-model="title" type="text" placeholder="Nombre Del Curso">
+            <input v-model="time" type="number" placeholder="Número De Horas En El Curso">
+
+            <!-- Se guarda la información agregada -->
+            <button v-on:click="addCourse">Guardar Curso</button>
+
+            <!-- Lista de cursos -->
+            <h2>Lista de Cursos</h2>
+            <span v-if="courses == 0" class="aviso" >🥺☝ Aún no has realizado cursos</span>
+            <div v-else>
+                <ul>
+                 <li v-for="p in courses" v-bind:key="p.title">{{ p.title }} --- {{ p.time }} horas</li>
+                </ul>
+            <span class="linea"></span>
+
+            <!-- Total de horas -->
+            <p>Llevo <strong class="totalDeHoras">{{ totalTime }}</strong> horas aprendiendo con Platzi</p>
+        </div> 
+  
+        <small>#NuncaParesDeAprender 💚</small>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,15 @@
+<div id="app">
+  <button v-on:click="toogleModal">Show Modal</button>
+  
+  <modal 
+         v-show="showModal"
+         v-on:close="toogleModal"
+         >
+    <template v-slot:body>
+      <p style="color: #ffffff ;">
+        Nunca dejes de aprender💚🚀
+      </p>
+    </template>
+  </modal>
+  
+</div>
